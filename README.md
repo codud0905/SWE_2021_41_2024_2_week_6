@@ -12,8 +12,6 @@ The purpose of this assignment is to set up an environment for a container that 
 
 You need to create a container that satisfies the above conditions and demonstrate it.
 
----
-
 ### Tips & Specifications
 
 #### Linux OS
@@ -36,8 +34,6 @@ You need to create a container that satisfies the above conditions and demonstra
 
 2. Write a Python code that solves the algorithm problem described below. You can check whether your code is correct or not with some test cases.
 
----
-
 ### Algorithm Task: Happy Number
 
 #### Problem Description
@@ -54,13 +50,14 @@ Return `True` if `n` is a happy number, and `False` if it is not.
 #### Constraints:
 - `1 <= n <= 2^31 - 1`
 
----
-
 #### Example:
 ```python
-def isHappy(n: int) -> bool:
-    seen = set()
-    while n != 1 and n not in seen:
-        seen.add(n)
-        n = sum(int(digit) ** 2 for digit in str(n))
-    return n == 1
+def isHappy(n):
+  save_num = set()
+  while (n != 1) and (n not in save_num):
+      save_num.add(n)
+      digits = []
+      for digit in str(n):
+          digits.append(int(digit)**2)
+      n = sum(digits)
+  return n == 1
