@@ -42,6 +42,6 @@ This environment must meet the following requirements:
    : **‘apt-get install -y git python3’** will install git and python3.
 4. Bind mount
    : **‘docker inspect --format="{{ .HostConfig.Binds }}" <container_name>'** prints path of mounted directory of the specified container.
-   /*The format:‘[<host_dir_path>:<container_dir_path>
+   \*The format:‘[<host_dir_path>:<container_dir_path>
 
 You need to create a container that satisfies the above conditions and demonstrate it.
