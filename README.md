@@ -3,8 +3,9 @@
 ## Lecture Contents: Docker
 
 ### Task Description
-The purpose of this assignment is to set up an environment for a container that will be used in the Open-Source Software Practice class. This environment must meet the following requirements:
+The purpose: to set up an environment for a container.
 
+This environment must meet the following requirements:
 1. Linux OS
 2. Git installed
 3. Python3 installed
@@ -29,11 +30,9 @@ You need to create a container that satisfies the above conditions and demonstra
 ## Lecture Contents: iPython (Google Colab)
 
 ### Task Description
-1. Follow the Colab link below and save a copy in your Google Drive:
-   [Google Colab Link](https://colab.research.google.com/drive/1vf9CM0iMOaypYmLEOm9SE14GZca-FV4Z?usp=sharing)
-
-2. Write a Python code that solves the algorithm problem described below. You can check whether your code is correct or not with some test cases.
-
+1. Follow the Colab link and save a copy in your Google Drive
+2. Write a Python code that solves the algorithm problem described below.
+   
 ### Algorithm Task: Happy Number
 
 #### Problem Description
