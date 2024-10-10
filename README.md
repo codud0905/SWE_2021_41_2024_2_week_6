@@ -43,10 +43,10 @@ The purpose: to set up an environment for a container.
 This environment must meet the following requirements:
 1. Linux OS: Use image based on ‘ubuntu’
 2. Git installed
-3. Python3 installed
-   *Git & Python installation & check
+3. Python3 installed\
+   - Git & Python installation & check\
    : **‘apt-get install -y git python3’** will install git and python3.
-4. Bind mount
+4. Bind mount\
    : **‘docker inspect --format="{{ .HostConfig.Binds }}" <container_name>'** prints path of mounted directory of the specified container.\
    - The format:‘[<host_dir_path>:<container_dir_path>
 
