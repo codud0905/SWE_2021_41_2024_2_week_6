@@ -19,12 +19,17 @@ A **happy number** is defined by the following process:
 
 Return `True` if `n` is a happy number, and `False` if it is not.
 
-#### Example:
+#### Constraints:
 - `1 <= n <= 2^31 - 1`
-      for digit in str(n):
-          digits.append(int(digit)**2)
-      n = sum(digits)
-  return n == 1
+
+#### Example:
+```python
+def isHappy(n: int) -> bool:
+    seen = set()
+    while n != 1 and n not in seen:
+        seen.add(n)
+        n = sum(int(digit) ** 2 for digit in str(n))
+    return n == 1
 
 ---
 # Week 5 Assignment - Open-Source Software Practice
