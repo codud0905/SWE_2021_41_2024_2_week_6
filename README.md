@@ -1,4 +1,4 @@
-# Week 4 Assignment - Open-Source Software Practice
+# Week 4 Assignment
 
 ## Lecture Contents: iPython (Google Colab)
 
@@ -33,7 +33,7 @@ def isHappy(n: int) -> bool:
 ```
 
 ---
-# Week 5 Assignment - Open-Source Software Practice
+# Week 5 Assignment 
 
 ## Lecture Contents: Docker
 
