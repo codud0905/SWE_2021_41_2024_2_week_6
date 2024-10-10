@@ -19,7 +19,7 @@ A **happy number** is defined by the following process:
 
 Return `True` if `n` is a happy number, and `False` if it is not.
 
-#### Constraints:
+#### Example:
 - `1 <= n <= 2^31 - 1`
       for digit in str(n):
           digits.append(int(digit)**2)
@@ -41,7 +41,7 @@ This environment must meet the following requirements:
    *Git & Python installation & check
    : **‘apt-get install -y git python3’** will install git and python3.
 4. Bind mount
-   : **‘docker inspect --format="{{ .HostConfig.Binds }}" <container_name>'** prints path of mounted directory of the specified container.
-   \*The format:‘[<host_dir_path>:<container_dir_path>
+   : **‘docker inspect --format="{{ .HostConfig.Binds }}" <container_name>'** prints path of mounted directory of the specified container.\
+   - The format:‘[<host_dir_path>:<container_dir_path>
 
 You need to create a container that satisfies the above conditions and demonstrate it.
