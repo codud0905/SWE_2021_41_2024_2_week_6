@@ -29,7 +29,8 @@ def isHappy(n: int) -> bool:
     while n != 1 and n not in seen:
         seen.add(n)
         n = sum(int(digit) ** 2 for digit in str(n))
-    return n == 1```
+    return n == 1
+```
 
 ---
 # Week 5 Assignment - Open-Source Software Practice
