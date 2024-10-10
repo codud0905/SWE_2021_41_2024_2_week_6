@@ -1,20 +1,3 @@
-# Week 5 Assignment - Open-Source Software Practice
-
-## Lecture Contents: Docker
-
-### Task Description
-The purpose: to set up an environment for a container.
-
-This environment must meet the following requirements:
-1. Linux OS
-2. Git installed
-3. Python3 installed
-4. Bind mount
-
-You need to create a container that satisfies the above conditions and demonstrate it.
-
----
-
 # Week 4 Assignment - Open-Source Software Practice
 
 ## Lecture Contents: iPython (Google Colab)
@@ -23,7 +6,7 @@ You need to create a container that satisfies the above conditions and demonstra
 1. Follow the Colab link and save a copy in your Google Drive
 2. Write a Python code that solves the algorithm problem described below.
    
-### Algorithm Task: Happy Number
+### Algorithm problem: Happy Number
 
 #### Problem Description
 Write an algorithm to determine if a number `n` is a happy number.
@@ -42,3 +25,23 @@ Return `True` if `n` is a happy number, and `False` if it is not.
           digits.append(int(digit)**2)
       n = sum(digits)
   return n == 1
+
+---
+# Week 5 Assignment - Open-Source Software Practice
+
+## Lecture Contents: Docker
+
+### Task Description
+The purpose: to set up an environment for a container.
+
+This environment must meet the following requirements:
+1. Linux OS: Use image based on ‘ubuntu’
+2. Git installed
+3. Python3 installed
+   *Git & Python installation & check
+   : **‘apt-get install -y git python3’** will install git and python3.
+4. Bind mount
+   : **‘docker inspect --format="{{ .HostConfig.Binds }}" <container_name>'** prints path of mounted directory of the specified container.
+   *The format:‘[<host_dir_path>:<container_dir_path>
+
+You need to create a container that satisfies the above conditions and demonstrate it.
