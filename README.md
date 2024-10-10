@@ -13,16 +13,6 @@ This environment must meet the following requirements:
 
 You need to create a container that satisfies the above conditions and demonstrate it.
 
-### Tips & Specifications
-
-#### Linux OS
-- Use an image based on `ubuntu` (for example, `ubuntu` or `ossp` images).
-
-#### Git & Python Installation & Check
-- Run the following command to install Git and Python3:
-  ```bash
-  apt-get install -y git python3
-
 ---
 
 # Week 4 Assignment - Open-Source Software Practice
@@ -48,14 +38,6 @@ Return `True` if `n` is a happy number, and `False` if it is not.
 
 #### Constraints:
 - `1 <= n <= 2^31 - 1`
-
-#### Example:
-```python
-def isHappy(n):
-  save_num = set()
-  while (n != 1) and (n not in save_num):
-      save_num.add(n)
-      digits = []
       for digit in str(n):
           digits.append(int(digit)**2)
       n = sum(digits)
